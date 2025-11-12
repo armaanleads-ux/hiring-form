@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register</title>
+  <style>
+    /* Basic modern card style like your screenshot */
+    body{
+      margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+      background:#f0f2f5; font-family:Inter, Arial, sans-serif;
+    }
+    .card{
+      width:360px; background:#0e1a2b; color:#fff; border-radius:16px; padding:28px; box-shadow:0 8px 30px rgba(0,0,0,0.2);
+    }
+    h1{color:#2dd4bf; margin:0 0 6px; font-size:28px; text-align:center;}
+    p.lead{color:#cbd5e1; font-size:13px; text-align:center; margin:0 0 18px;}
+    .row{display:flex; gap:10px;}
+    input, textarea{
+      width:100%; padding:12px 14px; border-radius:10px; border:none; outline:none;
+      font-size:14px; background:#fff; color:#111;
+    }
+    .half{flex:1;}
+    .submit{
+      margin-top:14px; background:#2dd4bf; color:#04303a; padding:12px; border-radius:10px; border:none; width:100%;
+      font-weight:600; cursor:pointer; font-size:16px;
+    }
+    .small{font-size:13px; color:#9fb2bf; text-align:center; margin-top:12px;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Register</h1>
+    <p class="lead">Signup now and get full access to our app.</p>
+
+    <!-- FORM: action must be Apps Script web app URL -->
+    <form action="https://script.google.com/macros/s/AKfycbwxajXDQHn9yvXwDUoS9WZP4aAsKMD8JqFZCN6lKiHz64HmhjeJiwudU7v2BG9NTyqj5w/exec" method="post" >
+      <div class="row">
+        <div class="half"><input name="firstname" placeholder="Firstname" required></div>
+        <div class="half"><input name="lastname" placeholder="Lastname" required></div>
+      </div>
+
+      <div style="margin-top:10px;">
+        <input name="email" type="email" placeholder="Email" required>
+      </div>
+
+      <div style="margin-top:10px;">
+        <input name="phone" placeholder="Phone Number" required>
+      </div>
+
+      <div style="margin-top:10px;">
+        <input name="experience" placeholder="Work Experience (e.g., 2 years at X)" >
+      </div>
+
+      <div style="margin-top:10px;">
+        <textarea name="note" rows="3" placeholder="Note (optional)"></textarea>
+      </div>
+
+      <button class="submit" type="submit">Submit</button>
+    </form>
+
+    <div class="small">Already have an account? <span style="color:#2dd4bf">Signin</span></div>
+  </div>
+</body>
+</html>
