@@ -24,7 +24,7 @@ body {
   background-color: #0b132b;
   padding: 40px 35px;
   border-radius: 14px;
-  width: 360px;
+  width: 250px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
@@ -39,9 +39,9 @@ body {
 
 .form-header h1 {
   color: #000000;
-  font-size: 24px;
+  font-size: 15px;
   margin: 0;
-  font-weight: 700; /* slightly bolder */
+  font-weight: 550; /* slightly bolder */
 }
 
 /* Subtitle */
@@ -53,13 +53,13 @@ body {
 
 /* Input fields */
 input, textarea {
-  width: 100%;
+  width: 400%;
   padding: 12px;
   margin-bottom: 15px;
   border: none;
   border-radius: 8px;
   outline: none;
-  font-size: 14px;
+  font-size: 20px;
   background-color: #ffffff;
   color: #000;
 }
