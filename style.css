@@ -38,10 +38,10 @@ body {
 }
 
 .form-header h1 {
-  color: #000;
+  color: #000000;
   font-size: 24px;
   margin: 0;
-  font-weight: 600;
+  font-weight: 700; /* slightly bolder */
 }
 
 /* Subtitle */
@@ -75,16 +75,16 @@ textarea {
 
 /* Button */
 button {
-  width: 100%;
+ width: 100%;
   background-color: #14c9c9;
-  color: #000;
+  color: #000000;
   border: none;
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  font-weight: 600;
+  transition: 0.3s;
+  font-weight: 600; /* make it semi-bold */
 }
 
 button:hover {
