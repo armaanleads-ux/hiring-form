@@ -1,41 +1,108 @@
-/* Page ka overall background aur layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background-color: #eef2f5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-form {
+  background-color: #0b132b;
+  padding: 40px 35px;
+  border-radius: 14px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.form-header {
+  background-color: #14c9c9;
+  padding: 12px 0;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.form-header h1 {
+  color: #000;
+  font-size: 24px;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
 }
 
-/* Form box ka design */
-.form-box {
-  background: #001f3f;
+/* Subtitle */
+.subtitle {
   color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  padding: 30px;
-  width: 380px; /* width balance */
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
-/* Input field styling */
-input, button {
+/* Input fields */
+input, textarea {
   width: 100%;
   padding: 12px;
-  margin: 8px 0;
-  border-radius: 8px;
+  margin-bottom: 15px;
   border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #000;
 }
 
-/* Button style */
-button {
-  background: #0074D9;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
+textarea {
+  resize: none;
 }
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #14c9c9;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
 button:hover {
-  background: #005fa3;
+  background-color: #10b4b4;
+}
+
+/* Sign-in link */
+.signin {
+  color: #ccc;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.signin a {
+  color: #14c9c9;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  text-decoration: underline;
 }
